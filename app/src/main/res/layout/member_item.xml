@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <!-- Categoría de la actividad -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Categoria"
+        android:id="@+id/nombre_txv"
+        android:layout_marginBottom="4sp"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/foto_perfil" />
+
+    <!-- Prioridad de la actividad -->
+
+    <!-- Técnico que realizará la activida -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Técnico"
+        android:paddingBottom="5dp"
+        android:id="@+id/grupo_txv"
+        android:layout_below="@+id/nombre_txv"
+        android:layout_alignStart="@+id/nombre_txv" />
+
+    <ImageView
+        android:id="@+id/foto_perfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_lldm"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+
